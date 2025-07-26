@@ -1,8 +1,8 @@
 ✅ Step 1: Create EKS Management Host in AWS
 
 🔹 Launch Ubuntu EC2 Instance
-    1 Instance Type: t2.micro
-    2 OS: Ubuntu (latest LTS preferred)
+    1.)Instance Type: t2.micro
+    2.)OS: Ubuntu (latest LTS preferred)
 🔹 Connect to the instance via SSH
 🔹 Install kubectl
 #curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl

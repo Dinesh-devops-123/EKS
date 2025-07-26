@@ -1,0 +1,23 @@
+apiVersion: v1                # Kubernetes API version
+kind: Pod                     # Resource type is Pod
+metadata:
+  name: nginx                 # Name of the pod
+  labels:
+    app: nginx                # Label to group/select the pod
+spec:
+  containers:
+    - name: nginx             # Name of the container
+      image: nginx:1.14.2     # Docker image to use
+      ports:
+        - containerPort: 80   # Port the container exposes
+
+#  List all pods in the current namespace
+$ kubectl get pods 
+# Get details of the pod 
+$ kubectl describe pod nginx 
+
+# check where the pod is running
+$kubectl get pod -o wide 
+
+#access the nginx pod
+$ curl http://<nginx-pod-ip>:80 

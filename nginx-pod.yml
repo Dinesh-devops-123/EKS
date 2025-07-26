@@ -7,10 +7,10 @@ metadata:
 spec:
   containers:
     - name: nginx             # Name of the container
-      image: nginx:1.14.2     # Docker image to use
+      image: nginx:1.14.2     # Docker image to use or path to the image
       ports:
         - containerPort: 80   # Port the container exposes
-
+        
 #  List all pods in the current namespace
 $ kubectl get pods 
 # Get details of the pod 
@@ -21,3 +21,6 @@ $kubectl get pod -o wide
 
 #access the nginx pod
 $ curl http://<nginx-pod-ip>:80 
+
+# To delete the pod
+$ kubectl delete pod nginx

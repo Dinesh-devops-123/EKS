@@ -30,10 +30,10 @@ we can our app in 2 ways
   spec:
 
   Meaning of the APi, kind ,metadata:
-  > apiVersion - represents version of our api like v1,v2,v3
-  > kind - represents what is the purpose of this manifest file
-  > metadata - represents data about the (labels)
-  > spec - represents specification (what you want to use for this manifest)
+  > apiVersion - represents version of our api like v1,v2,v3.
+  > kind - represents what is the purpose of this manifest file.
+  > metadata - represents data about the (labels).
+  > spec - represents specification (what you want to use for this manifest).
 
 javawebapppod.yml
 
